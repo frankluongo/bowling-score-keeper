@@ -26,6 +26,7 @@ class Bowling {
     if (roll === STRIKE) {
       this.currentFrame.push(roll);
       this.currentFrame.push(0);
+      this.state.rolls.push(0);
     }
     this.currentFrame.length <= 1 && this.currentFrame.push(roll);
     if (this.currentFrame.length > 1) {
